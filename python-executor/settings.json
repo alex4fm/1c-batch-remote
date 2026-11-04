@@ -1,0 +1,14 @@
+{
+    "port": 8765,
+    "token": "2f58a08c52e0a210d718556d7bf80b39ebb7",
+    "artifactRetentionDays": 7,
+    "consoleEncoding": "utf-8",
+    "limits": {
+        "maxZipBytes": 33554432,
+        "maxUnpackedBytes": 134217728,
+        "maxFiles": 10000,
+        "updateTimeoutSeconds": 120,
+        "executionTimeoutSeconds": 600,
+        "resultTimeoutSeconds": 30
+    }
+}

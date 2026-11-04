@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Образец для корня сайта: объединить с существующим web.config, не заменять его. -->
+<configuration>
+  <system.webServer>
+    <rewrite>
+      <rules>
+        <rule name="1c-batch reverse proxy" stopProcessing="true">
+          <match url="^batch/(.*)$" />
+          <action type="Rewrite" url="http://127.0.0.1:8765/{R:1}" appendQueryString="true" />
+        </rule>
+      </rules>
+    </rewrite>
+  </system.webServer>
+  <location path="batch">
+    <system.webServer>
+      <httpErrors existingResponse="PassThrough" />
+      <security>
+        <requestFiltering>
+          <requestLimits maxAllowedContentLength="33554432" />
+        </requestFiltering>
+      </security>
+    </system.webServer>
+  </location>
+</configuration>
