@@ -48,4 +48,6 @@
 
 Настройка применяется ко всему серверу IIS.
 
+## 4. Перезапустите службу IIS
+
 Источники: [пример обратного прокси Microsoft](https://learn.microsoft.com/en-us/iis/extensions/url-rewrite-module/reverse-proxy-with-url-rewrite-v2-and-application-request-routing), [лимит Request Filtering](https://learn.microsoft.com/en-us/iis/configuration/system.webserver/security/requestfiltering/requestlimits/), [передача ответов и HTTP-ошибки](https://learn.microsoft.com/en-us/iis/configuration/system.webserver/httperrors/).
