@@ -1,6 +1,6 @@
 @echo off
 setlocal
-REM chcp 65001 >nul
+chcp 65001 >nul
 python "%~dp0server\bootstrap.py"
 set "executor_exit=%ERRORLEVEL%"
 if not "%executor_exit%"=="0" (
